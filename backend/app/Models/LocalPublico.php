@@ -17,11 +17,18 @@ class LocalPublico extends Model
 
     }
 
+    // Relação com a Prefeitura
+    public function prefeitura()
+    {
+        return $this->belongsTo(Prefeitura::class);
+    }
+
+
     protected $fillable = [
+        
         'nome', //nome do local publico
-        'rua', //rua do local publico
-        'bairro', // bairro do local publico
-        'prefeitura_id'
+        'endereco', //endereço do local publico 
+        
     ];
 
 }

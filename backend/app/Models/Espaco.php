@@ -18,7 +18,7 @@ class Espaco extends Model
     protected $fillable = [ 
 
         'tipo', //tipo do local que será agendado
-        'disponivel' //local pode esta indisponivel
+        'disponivel' //local pode esta indisponivel 
 
     ];
 

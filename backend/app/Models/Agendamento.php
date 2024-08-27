@@ -11,8 +11,10 @@ class Agendamento extends Model
 
     protected $fillable = [ 
 
-        'dia', // dia que será agendado o local publico
+        'cidade', //verifica se a cidade existe no banco de dados
+        'espaco', 
         'mes', //mes que será agendado
+        'dia', // dia que será agendado o local publico
         'horario', //horário que será agendado
         
     ];
